@@ -1,14 +1,17 @@
-import { precacheAndRoute } from 'workbox-precaching';
+import { precacheAndRoute } from 'workbox-precaching'
+import { registerRoute } from 'workbox-routing'
+import { CacheFirst, NetworkFirst } from 'workbox-strategies'
 
 precacheAndRoute(self.__WB_MANIFEST);
 
-var CACHE_NAME = 'offline-learn-cache-v1';
+var CACHE_NAME = 'root.home';
 var urlsToCache = [
     '/',
 ];
 
 self.addEventListener('install', function (event) {
-    // Perform install steps
+    self.skipWainting()
+
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(function (cache) {

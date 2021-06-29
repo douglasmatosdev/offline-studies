@@ -1,7 +1,7 @@
 {
   "name": "offlineStudies",
   "short_name": "offSt",
-  "start_url": "/",
+  "start_url": "/?start_url",
   "display": "standalone",
   "description": "This is a application for learn about PWA",
   "background_color": "#3367D6",
@@ -9,16 +9,23 @@
   "theme_color": "#3367D6",
   "icons": [
     {
-      "src": "/logo192.png",
+      "src": "/public/assets/logo192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/logo512.png",
+      "src": "/public/assets/logo512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/public/assets/react-logo.gif",
+      "sizes": "512x512",
+      "type": "iamge/gif"
     }
   ]
 }

@@ -9,7 +9,7 @@
     "dev": "webpack --config webpack/webpack.dev.js",
     "build": "webpack --config webpack/webpack.prod.js",
     "start": "webpack-dev-server --content-base --config webpack/webpack.dev.js --open",
-    "pwa": "http-server  dist"
+    "pwa": "rm -rf dist && yarn build && http-server  dist"
   },
   "dependencies": {
     "react": "^17.0.2",

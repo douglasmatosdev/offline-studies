@@ -44,8 +44,8 @@ module.exports = merge(common, {
     }),
     new CopyPlugin({
       patterns: [
-        { from: './src/assets/', to: './' },
-        { from: './pwa.webmanifest', to: './' },
+        { from: './src/assets/', to: './public/assets/' },
+        { from: './pwa.webmanifest', to: './public/' },
       ],
     }),
   ],
