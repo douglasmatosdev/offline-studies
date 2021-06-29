@@ -1,0 +1,49 @@
+{
+  "name": "offline-studies",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/douglasmatosdev/offline-studies.git",
+  "author": "douglasmatosdev <douglasmatosdev@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack --config webpack/webpack.dev.js",
+    "build": "webpack --config webpack/webpack.prod.js",
+    "start": "webpack-dev-server --content-base --config webpack/webpack.dev.js --open",
+    "pwa": "http-server  dist"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.0",
+    "workbox": "^0.0.0",
+    "workbox-routing": "^6.1.5",
+    "workbox-strategies": "^6.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "@types/styled-components": "^5.1.10",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^5.2.6",
+    "html-webpack-plugin": "^5.3.2",
+    "http-server": "^0.12.3",
+    "mini-css-extract-plugin": "^1.6.2",
+    "node-sass": "^6.0.1",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "path": "^0.12.7",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "terser-webpack-plugin": "^5.1.4",
+    "webpack": "^5.41.0",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0",
+    "workbox-webpack-plugin": "^6.1.5"
+  }
+}
